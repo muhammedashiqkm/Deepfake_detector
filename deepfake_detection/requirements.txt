@@ -1,0 +1,17 @@
+django
+torch
+torchvision
+efficientnet-pytorch
+timm
+opencv-python
+mediapipe
+numpy
+Pillow
+scikit-learn
+matplotlib
+seaborn
+python-dotenv
+django-crispy-forms
+crispy-bootstrap5
+whitenoise
+mlflow

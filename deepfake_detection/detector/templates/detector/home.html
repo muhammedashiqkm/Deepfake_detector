@@ -1,0 +1,79 @@
+{% extends 'detector/base.html' %}
+
+{% block content %}
+<div class="text-center mb-5">
+    <h1 class="display-4 mb-3">🔍 Deepfake Detection System</h1>
+    <p class="lead">Upload an image or video to check if it's real or fake using our advanced deep learning models.</p>
+</div>
+
+<div class="row justify-content-center g-4">
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-image fa-3x mb-3 text-primary"></i>
+                <h3 class="card-title">Image Analysis</h3>
+                <p class="card-text">Upload a single image to detect if it's real or manipulated.</p>
+                <ul class="list-unstyled text-muted mb-4">
+                    <li><i class="fas fa-check text-success"></i> Supports JPG, PNG formats</li>
+                    <li><i class="fas fa-check text-success"></i> Face detection</li>
+                    <li><i class="fas fa-check text-success"></i> Instant results</li>
+                </ul>
+                <a href="{% url 'image_analysis' %}" class="btn btn-primary btn-lg">
+                    <i class="fas fa-upload me-2"></i>Analyze Image
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-video fa-3x mb-3 text-primary"></i>
+                <h3 class="card-title">Video Analysis</h3>
+                <p class="card-text">Analyze video content for deepfake manipulation.</p>
+                <ul class="list-unstyled text-muted mb-4">
+                    <li><i class="fas fa-check text-success"></i> Supports MP4, AVI formats</li>
+                    <li><i class="fas fa-check text-success"></i> Frame-by-frame analysis</li>
+                    <li><i class="fas fa-check text-success"></i> Detailed timeline view</li>
+                </ul>
+                <a href="{% url 'video_analysis' %}" class="btn btn-primary btn-lg">
+                    <i class="fas fa-upload me-2"></i>Analyze Video
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="text-center mb-4">How It Works</h3>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <i class="fas fa-upload fa-2x mb-3 text-primary"></i>
+                            <h4>1. Upload</h4>
+                            <p>Upload your image or video file for analysis</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <i class="fas fa-cogs fa-2x mb-3 text-primary"></i>
+                            <h4>2. Process</h4>
+                            <p>Our AI models analyze the content for manipulation</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <i class="fas fa-chart-bar fa-2x mb-3 text-primary"></i>
+                            <h4>3. Results</h4>
+                            <p>Get detailed analysis results and confidence scores</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

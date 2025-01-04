@@ -1,0 +1,209 @@
+{% extends 'detector/base.html' %}
+{% load detector_filters %}
+{% load static %}
+
+{% block content %}
+{% if analysis %}
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">Video Information</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <strong>Total Frames Analyzed:</strong> {{ total_frames }}
+                    </li>
+                    <li class="mb-2">
+                        <strong>Fake Frame Ratio:</strong> 
+                        {{ analysis.fake_frame_ratio|multiply:100|floatformat:1 }}%
+                    </li>
+                    <li>
+                        <strong>Analysis Date:</strong> 
+                        {{ analysis.created_at|date:"F j, Y H:i" }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Overall Verdict</h3>
+                <div class="text-center">
+                    <span class="display-4 {% if analysis.result == 'fake' %}fake-indicator{% else %}real-indicator{% endif %}">
+                        {{ analysis.result|upper }}
+                    </span>
+                    <div class="progress mt-3">
+                        <div class="progress-bar {% if analysis.result == 'fake' %}bg-danger{% else %}bg-success{% endif %}"
+                             role="progressbar"
+                             style="width: {{ analysis.confidence|multiply:100 }}%">
+                        </div>
+                    </div>
+                    <small class="text-muted">
+                        Confidence: {{ analysis.confidence|multiply:100|floatformat:1 }}%
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-8">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">Model Predictions</h3>
+                {% for result in results %}
+                <div class="result-card mb-4">
+                    <h4>{{ result.model_type|upper }}</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <span class="h5 {% if result.prediction == 'fake' %}fake-indicator{% else %}real-indicator{% endif %}">
+                                    {{ result.prediction|upper }}
+                                </span>
+                                <div class="progress mt-2">
+                                    <div class="progress-bar {% if result.prediction == 'fake' %}bg-danger{% else %}bg-success{% endif %}"
+                                         role="progressbar"
+                                         style="width: {{ result.confidence|multiply:100 }}%">
+                                    </div>
+                                </div>
+                                <small class="text-muted">
+                                    Confidence: {{ result.confidence|multiply:100|floatformat:1 }}%
+                                </small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <span class="h5">Fake Frames</span>
+                                <div class="progress mt-2">
+                                    <div class="progress-bar bg-warning"
+                                         role="progressbar"
+                                         style="width: {{ result.fake_frame_ratio|multiply:100 }}%">
+                                    </div>
+                                </div>
+                                <small class="text-muted">
+                                    {{ result.fake_frame_ratio|multiply:100|floatformat:1 }}% of frames
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Frame Analysis Grid -->
+<div class="card mt-4">
+    <div class="card-body">
+        <h3 class="card-title">Frame Analysis Grid</h3>
+        <div class="row g-4">
+            {% for frame_result in frame_results.0 %}
+            <div class="col-md-3 col-sm-6">
+                <div class="frame-card">
+                    {% if forloop.counter0 < frame_images|length %}
+                        <img src="/media/{{ frame_images|index:forloop.counter0 }}" 
+                             class="img-fluid rounded mb-2" alt="Frame {{ forloop.counter }}">
+                    {% else %}
+                        <div class="no-image-placeholder rounded mb-2">
+                            <i class="fas fa-image"></i>
+                            <p>No image available</p>
+                        </div>
+                    {% endif %}
+                    <div class="frame-info">
+                        <h5 class="mb-2">Frame {{ forloop.counter }}</h5>
+                        <span class="badge {% if frame_result.prediction == 'fake' %}bg-danger{% else %}bg-success{% endif %} mb-2">
+                            {{ frame_result.prediction|upper }}
+                        </span>
+                        <div class="progress">
+                            <div class="progress-bar {% if frame_result.prediction == 'fake' %}bg-danger{% else %}bg-success{% endif %}"
+                                 role="progressbar"
+                                 style="width: {{ frame_result.confidence|multiply:100 }}%">
+                                {{ frame_result.confidence|multiply:100|floatformat:1 }}%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    <a href="{% url 'video_analysis' %}" class="btn btn-primary me-2">
+        <i class="fas fa-upload me-2"></i>Analyze Another Video
+    </a>
+</div>
+{% else %}
+<div class="text-center">
+    <h3>No analysis results found</h3>
+    <p>Please upload a video for analysis.</p>
+    <a href="{% url 'video_analysis' %}" class="btn btn-primary">
+        <i class="fas fa-upload me-2"></i>Upload Video
+    </a>
+</div>
+{% endif %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+    });
+</script>
+
+<style>
+    .frame-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 1rem;
+        transition: transform 0.3s ease;
+    }
+
+    .frame-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .frame-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .frame-info {
+        text-align: center;
+    }
+
+    .frame-info h5 {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .progress {
+        height: 10px;
+        margin-top: 0.5rem;
+    }
+
+    .no-image-placeholder {
+        width: 100%;
+        height: 200px;
+        background-color: #f8f9fa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #6c757d;
+    }
+
+    .no-image-placeholder i {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+</style>
+{% endblock %}
+{% endblock %}

@@ -1,0 +1,1494 @@
+Error loading models: [Errno 2] No such file or directory: 'C:\\Users\\ashiq\\Downloads\\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\\deepfake_detection\\models\\best_model_efficienet.pth'
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /image/ HTTP/1.1" 200 12741
+Error processing image: name 'transforms' is not defined
+Error processing image: name 'transforms' is not defined
+Error processing image: max() iterable argument is empty
+"POST /image/ HTTP/1.1" 200 12741
+Internal Server Error: /history/
+Traceback (most recent call last):
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 693, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 603, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+"GET /history/ HTTP/1.1" 500 275900
+Error processing image: name 'transforms' is not defined
+Error processing image: name 'transforms' is not defined
+Error processing image: max() iterable argument is empty
+"POST /image/ HTTP/1.1" 200 12741
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /image/ HTTP/1.1" 200 12741
+Error processing image: name 'transforms' is not defined
+Error processing image: name 'transforms' is not defined
+Error processing image: max() iterable argument is empty
+"POST /image/ HTTP/1.1" 200 12741
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\__init__.py changed, reloading.
+generated new fontManager
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /image/ HTTP/1.1" 200 12715
+"POST /image/ HTTP/1.1" 302 0
+Internal Server Error: /image/result/
+Traceback (most recent call last):
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 693, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 603, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+"GET /image/result/ HTTP/1.1" 500 239164
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /image/ HTTP/1.1" 200 12715
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 8834
+"GET /media/uploads/6177109789054714655-removebg-preview_fXHcVHg.png HTTP/1.1" 200 87507
+"GET /media/processed/viz_6177109789054714655-removebg-preview_fXHcVHg.png HTTP/1.1" 200 69352
+"GET /history/ HTTP/1.1" 200 10665
+"GET /history/ HTTP/1.1" 200 10665
+"GET /image/ HTTP/1.1" 200 12715
+"GET /video/ HTTP/1.1" 200 15065
+"POST /video/ HTTP/1.1" 302 0
+"GET /video/result/ HTTP/1.1" 200 12391
+"GET /history/ HTTP/1.1" 200 11847
+"GET /video/result/ HTTP/1.1" 200 12391
+"GET /video/ HTTP/1.1" 200 15065
+"POST /video/ HTTP/1.1" 302 0
+"GET /video/result/ HTTP/1.1" 200 12397
+"GET /video/ HTTP/1.1" 200 15065
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 14893
+"POST /video/ HTTP/1.1" 302 0
+"GET /video/result/ HTTP/1.1" 200 12398
+"GET /video/ HTTP/1.1" 200 14893
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /image/ HTTP/1.1" 200 12715
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 8834
+"GET /media/uploads/6177109789054714655-removebg-preview_MMOkZF3.png HTTP/1.1" 200 87507
+"GET /media/processed/viz_6177109789054714655-removebg-preview_MMOkZF3.png HTTP/1.1" 200 69352
+"GET /image/ HTTP/1.1" 200 12715
+"GET /video/ HTTP/1.1" 200 14893
+"POST /video/ HTTP/1.1" 302 0
+"GET /video/result/ HTTP/1.1" 200 24337
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 14893
+"POST /video/ HTTP/1.1" 302 0
+"GET /video/result/ HTTP/1.1" 200 19598
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 14893
+Error processing video: name 'os' is not defined
+"POST /video/ HTTP/1.1" 200 14893
+Error processing video: name 'os' is not defined
+"POST /video/ HTTP/1.1" 200 14893
+Error processing video: name 'os' is not defined
+"POST /video/ HTTP/1.1" 200 14893
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 0
+"GET /video/ HTTP/1.1" 200 0
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 0
+"GET /video/ HTTP/1.1" 200 0
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 0
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 0
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 0
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 0
+"GET /image/ HTTP/1.1" 200 12715
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 15317
+"POST /video/ HTTP/1.1" 302 0
+Internal Server Error: /video/result/
+Traceback (most recent call last):
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 1489, in do_with
+    extra_context = token_kwargs(remaining_bits, parser, support_legacy=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1111, in token_kwargs
+    kwargs[key] = parser.compile_filter(value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 693, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 603, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'index'
+"GET /video/result/ HTTP/1.1" 500 290241
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\templatetags\detector_filters.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 15317
+"POST /video/ HTTP/1.1" 302 0
+"GET /video/result/ HTTP/1.1" 200 28713
+Not Found: /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_0.jpg
+Not Found: /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_1.jpg
+"GET /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_0.jpg HTTP/1.1" 404 3667
+Not Found: /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_2.jpg
+"GET /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_1.jpg HTTP/1.1" 404 3667
+"GET /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_2.jpg HTTP/1.1" 404 3667
+Not Found: /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_5.jpg
+Not Found: /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_4.jpg
+Not Found: /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_3.jpg
+"GET /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_5.jpg HTTP/1.1" 404 3667
+"GET /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_4.jpg HTTP/1.1" 404 3667
+"GET /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_3.jpg HTTP/1.1" 404 3667
+Not Found: /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_6.jpg
+"GET /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_6.jpg HTTP/1.1" 404 3667
+Not Found: /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_7.jpg
+Not Found: /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_8.jpg
+"GET /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_7.jpg HTTP/1.1" 404 3667
+"GET /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_8.jpg HTTP/1.1" 404 3667
+Not Found: /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_11.jpg
+Not Found: /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_10.jpg
+Not Found: /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_9.jpg
+"GET /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_11.jpg HTTP/1.1" 404 3670
+"GET /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_10.jpg HTTP/1.1" 404 3670
+"GET /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_9.jpg HTTP/1.1" 404 3667
+Not Found: /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_13.jpg
+Not Found: /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_12.jpg
+"GET /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_13.jpg HTTP/1.1" 404 3670
+"GET /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_12.jpg HTTP/1.1" 404 3670
+Not Found: /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_14.jpg
+"GET /video/result/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_mUnOnHs/frame_14.jpg HTTP/1.1" 404 3670
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 15317
+"POST /video/ HTTP/1.1" 302 0
+"GET /video/result/ HTTP/1.1" 200 33591
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_5.jpg HTTP/1.1" 200 3299
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_6.jpg HTTP/1.1" 200 3306
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_7.jpg HTTP/1.1" 200 3397
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_8.jpg HTTP/1.1" 200 3632
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_9.jpg HTTP/1.1" 200 2850
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_10.jpg HTTP/1.1" 200 3114
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_11.jpg HTTP/1.1" 200 3324
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_12.jpg HTTP/1.1" 200 3215
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_13.jpg HTTP/1.1" 200 3147
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_3.jpg HTTP/1.1" 200 3256
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_14.jpg HTTP/1.1" 200 3277
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_15.jpg HTTP/1.1" 200 3143
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_16.jpg HTTP/1.1" 200 3193
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_17.jpg HTTP/1.1" 200 3669
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_18.jpg HTTP/1.1" 200 3671
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_19.jpg HTTP/1.1" 200 3057
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_4.jpg HTTP/1.1" 200 3381
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_1.jpg HTTP/1.1" 200 3294
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_0.jpg HTTP/1.1" 200 3072
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_1_v5IPHOT/frame_2.jpg HTTP/1.1" 200 3310
+"GET /video/ HTTP/1.1" 200 15317
+"GET /image/ HTTP/1.1" 200 12715
+No face detected in the image.
+"POST /image/ HTTP/1.1" 200 12715
+No face detected in the image.
+"POST /image/ HTTP/1.1" 200 12715
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 11934
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 11934
+"GET /image/ HTTP/1.1" 200 12715
+No face detected in the image.
+"POST /image/ HTTP/1.1" 200 13051
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 9037
+"GET /media/uploads/f1.png HTTP/1.1" 200 200472
+"GET /media/processed/viz_f1.png HTTP/1.1" 200 2072769
+"GET /image/ HTTP/1.1" 200 12715
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 9050
+"GET /media/uploads/download.jpeg HTTP/1.1" 200 8294
+"GET /media/processed/viz_download.jpeg HTTP/1.1" 200 10306
+"GET /image/ HTTP/1.1" 200 12715
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 9042
+"GET /media/uploads/OIP_1.jpg HTTP/1.1" 200 22029
+"GET /media/processed/viz_OIP_1.jpg HTTP/1.1" 200 23043
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /image/ HTTP/1.1" 200 12715
+"POST /image/ HTTP/1.1" 302 0
+Internal Server Error: /image/result/
+Traceback (most recent call last):
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 693, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 603, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+"GET /image/result/ HTTP/1.1" 500 286214
+"GET /image/ HTTP/1.1" 200 13004
+"POST /image/ HTTP/1.1" 302 0
+Internal Server Error: /image/result/
+Traceback (most recent call last):
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 693, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 603, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+"GET /image/result/ HTTP/1.1" 500 286214
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7861
+"GET /image/ HTTP/1.1" 200 12715
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 6144
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /image/ HTTP/1.1" 200 12715
+"POST /image/ HTTP/1.1" 200 12994
+"POST /image/ HTTP/1.1" 302 0
+Internal Server Error: /image/result/
+Traceback (most recent call last):
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 693, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 603, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+"GET /image/result/ HTTP/1.1" 500 266636
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7861
+"GET /image/ HTTP/1.1" 200 12715
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 5686
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /image/ HTTP/1.1" 200 12715
+Saved visualization to: C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\media\visualizations\6177109789054714655-removebg-preview_sWKzetM_1735038150.jpg
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 5811
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 11934
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /image/ HTTP/1.1" 200 12715
+"POST /image/ HTTP/1.1" 200 12994
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 7131
+"GET /media/uploads/6177109789054714655-removebg-preview_nOApXVf.png HTTP/1.1" 200 87507
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 11934
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /image/ HTTP/1.1" 200 12715
+"GET /video/ HTTP/1.1" 200 15317
+"POST /video/ HTTP/1.1" 302 0
+"GET /video/result/ HTTP/1.1" 200 23945
+"GET /media/frames/01_11__meeting_serious__9OM3VE0Y_3eFyy1h/frame_2.jpg HTTP/1.1" 200 3205
+"GET /media/frames/01_11__meeting_serious__9OM3VE0Y_3eFyy1h/frame_4.jpg HTTP/1.1" 200 2807
+"GET /media/frames/01_11__meeting_serious__9OM3VE0Y_3eFyy1h/frame_3.jpg HTTP/1.1" 200 3078
+"GET /media/frames/01_11__meeting_serious__9OM3VE0Y_3eFyy1h/frame_0.jpg HTTP/1.1" 200 3471
+"GET /media/frames/01_11__meeting_serious__9OM3VE0Y_3eFyy1h/frame_9.jpg HTTP/1.1" 200 3340
+"GET /media/frames/01_11__meeting_serious__9OM3VE0Y_3eFyy1h/frame_7.jpg HTTP/1.1" 200 3107
+"GET /media/frames/01_11__meeting_serious__9OM3VE0Y_3eFyy1h/frame_8.jpg HTTP/1.1" 200 2955
+"GET /media/frames/01_11__meeting_serious__9OM3VE0Y_3eFyy1h/frame_6.jpg HTTP/1.1" 200 3444
+"GET /media/frames/01_11__meeting_serious__9OM3VE0Y_3eFyy1h/frame_1.jpg HTTP/1.1" 200 3250
+"GET /media/frames/01_11__meeting_serious__9OM3VE0Y_3eFyy1h/frame_5.jpg HTTP/1.1" 200 3108
+"GET /history/ HTTP/1.1" 200 17442
+"GET /history/?page=3 HTTP/1.1" 200 18007
+"GET /history/?page=2 HTTP/1.1" 200 17784
+"GET /video/ HTTP/1.1" 200 15317
+"POST /video/ HTTP/1.1" 302 0
+"GET /video/result/ HTTP/1.1" 200 24010
+"GET /media/frames/02_06__walking_and_outside_surprised__N8OSN8P6/frame_0.jpg HTTP/1.1" 200 7455
+"GET /media/frames/02_06__walking_and_outside_surprised__N8OSN8P6/frame_1.jpg HTTP/1.1" 200 10121
+"GET /media/frames/02_06__walking_and_outside_surprised__N8OSN8P6/frame_5.jpg HTTP/1.1" 200 8830
+"GET /media/frames/02_06__walking_and_outside_surprised__N8OSN8P6/frame_6.jpg HTTP/1.1" 200 8553
+"GET /media/frames/02_06__walking_and_outside_surprised__N8OSN8P6/frame_2.jpg HTTP/1.1" 200 12606
+"GET /media/frames/02_06__walking_and_outside_surprised__N8OSN8P6/frame_3.jpg HTTP/1.1" 200 16963
+"GET /media/frames/02_06__walking_and_outside_surprised__N8OSN8P6/frame_4.jpg HTTP/1.1" 200 9915
+"GET /media/frames/02_06__walking_and_outside_surprised__N8OSN8P6/frame_9.jpg HTTP/1.1" 200 7677
+"GET /media/frames/02_06__walking_and_outside_surprised__N8OSN8P6/frame_8.jpg HTTP/1.1" 200 8782
+"GET /media/frames/02_06__walking_and_outside_surprised__N8OSN8P6/frame_7.jpg HTTP/1.1" 200 6440
+"GET /video/ HTTP/1.1" 200 15317
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+"GET /video/ HTTP/1.1" 200 15317
+"POST /video/ HTTP/1.1" 302 0
+"GET /video/result/ HTTP/1.1" 200 21959
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_1.jpg HTTP/1.1" 200 5519
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_6.jpg HTTP/1.1" 200 5394
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_7.jpg HTTP/1.1" 200 5447
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_8.jpg HTTP/1.1" 200 5185
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_0.jpg HTTP/1.1" 200 5442
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_9.jpg HTTP/1.1" 200 5757
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_4.jpg HTTP/1.1" 200 5637
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_3.jpg HTTP/1.1" 200 5291
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_5.jpg HTTP/1.1" 200 5306
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_2.jpg HTTP/1.1" 200 5403
+"GET /video/result/ HTTP/1.1" 200 26697
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_1.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_2.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_3.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_5.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_4.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_6.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_7.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_9.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_8.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_0.jpg HTTP/1.1" 304 0
+"GET /video/result/ HTTP/1.1" 200 21959
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_1.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_0.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_2.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_3.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_4.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_9.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_5.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_8.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_6.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_7.jpg HTTP/1.1" 304 0
+"GET /video/result/ HTTP/1.1" 200 21959
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_1.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_3.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_5.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_4.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_2.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_7.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_8.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_6.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_9.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_0.jpg HTTP/1.1" 304 0
+"GET /video/result/ HTTP/1.1" 200 21959
+"GET /video/result/ HTTP/1.1" 200 21959
+"GET /video/result/ HTTP/1.1" 200 21959
+"GET /video/result/ HTTP/1.1" 200 21959
+"GET /video/result/ HTTP/1.1" 200 21959
+"GET /video/result/ HTTP/1.1" 200 21959
+"GET /video/result/ HTTP/1.1" 200 21964
+"GET /video/result/ HTTP/1.1" 200 21964
+"GET /video/result/ HTTP/1.1" 200 21964
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_5.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_6.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_9.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_8.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_7.jpg HTTP/1.1" 304 0
+"GET /video/result/ HTTP/1.1" 200 21964
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_1.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_0.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_4.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_3.jpg HTTP/1.1" 304 0
+"GET /media/frames/01_03__podium_speech_happy__480LQD1C_QuEdb4N/frame_2.jpg HTTP/1.1" 304 0
+"GET /video/result/ HTTP/1.1" 200 21964
+"GET /video/result/ HTTP/1.1" 200 21959
+"GET /video/result/ HTTP/1.1" 200 21959
+"GET /video/ HTTP/1.1" 200 15317
+"GET / HTTP/1.1" 200 7572
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7572
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3466
+"GET /image/ HTTP/1.1" 200 12715
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 8834
+"GET /media/processed/viz_6177109789054714655-removebg-preview_0YnV13U.png HTTP/1.1" 200 69352
+"GET /media/uploads/6177109789054714655-removebg-preview_0YnV13U.png HTTP/1.1" 200 87507
+"GET /history/ HTTP/1.1" 200 17489
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7431
+"GET /image/ HTTP/1.1" 200 12574
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7431
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 6533
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7431
+"GET /image/ HTTP/1.1" 200 12574
+Error processing image: 'visualization_path'
+"POST /image/ HTTP/1.1" 200 12574
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7431
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 7929
+"GET /media/uploads/download_AS02I6B.jpeg HTTP/1.1" 200 8294
+"GET /media/C%3A/Users/ashiq/Downloads/deepfake-detection-project-v5-muhammedashiqkm-cnn_l/deepfake_detection/media/uploads/download_AS02I6B_analyzed.jpeg HTTP/1.1" 200 12647
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 6780
+"GET /media/uploads/6177109789054714655-removebg-preview_TO16WlL.png HTTP/1.1" 200 87507
+"GET /media/C%3A/Users/ashiq/Downloads/deepfake-detection-project-v5-muhammedashiqkm-cnn_l/deepfake_detection/media/uploads/6177109789054714655-removebg-preview_TO16WlL_analyzed.png HTTP/1.1" 200 64211
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 12736
+"GET /media/uploads/OIP_1_2cDLbHC.jpg HTTP/1.1" 200 22029
+"GET /media/C%3A/Users/ashiq/Downloads/deepfake-detection-project-v5-muhammedashiqkm-cnn_l/deepfake_detection/media/uploads/OIP_1_2cDLbHC_analyzed.jpg HTTP/1.1" 200 31635
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7431
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+Internal Server Error: /image/result/
+Traceback (most recent call last):
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 859, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 693, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 603, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'zip'
+"GET /image/result/ HTTP/1.1" 500 254363
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\templatetags\detector_filters.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7431
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 14766
+"GET /media/C%3A/Users/ashiq/Downloads/deepfake-detection-project-v5-muhammedashiqkm-cnn_l/deepfake_detection/media/uploads/OIP_1_ZbvcPfv_analyzed.jpg HTTP/1.1" 200 33485
+"GET /media/uploads/OIP_1_ZbvcPfv.jpg HTTP/1.1" 200 22029
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7431
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+Internal Server Error: /image/result/
+Traceback (most recent call last):
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 325, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'history' not found. 'history' is not a valid view function or pattern name.
+"GET /image/result/ HTTP/1.1" 500 205668
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7431
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 28963
+"GET /media/uploads/OIP_1_A3wbv7S.jpg HTTP/1.1" 200 22029
+"GET /media/processed/processed_OIP_1_A3wbv7S.jpg HTTP/1.1" 200 59805
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 13737
+"GET /media/uploads/download.jpg HTTP/1.1" 200 12448
+"GET /media/processed/processed_download.jpg HTTP/1.1" 200 30219
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 9609
+"GET /media/uploads/f2.png HTTP/1.1" 200 64247
+"GET /media/processed/processed_f2.png HTTP/1.1" 200 59456
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 9609
+"GET /media/uploads/th.jpg HTTP/1.1" 200 21184
+"GET /media/processed/processed_th.jpg HTTP/1.1" 200 37375
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 9609
+"GET /media/processed/processed_66.png HTTP/1.1" 200 69594
+"GET /media/uploads/66.png HTTP/1.1" 200 69639
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7431
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+Internal Server Error: /image/result/
+Traceback (most recent call last):
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 325, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashiq\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'history' not found. 'history' is not a valid view function or pattern name.
+"GET /image/result/ HTTP/1.1" 500 168549
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7431
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 8453
+"GET /media/uploads/1.png HTTP/1.1" 200 75722
+"GET /media/processed/viz_1.png HTTP/1.1" 200 51299
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7431
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 9431
+"GET /media/uploads/1_nvdmMgZ.png HTTP/1.1" 200 75722
+"GET /media/C%3A/Users/ashiq/Downloads/deepfake-detection-project-v5-muhammedashiqkm-cnn_l/deepfake_detection/media/uploads/1_nvdmMgZ_processed.png HTTP/1.1" 200 51299
+C:\Users\ashiq\Downloads\deepfake-detection-project-v5-muhammedashiqkm-cnn_l\deepfake_detection\detector\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7431
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 8543
+"GET /media/uploads/6177109789054714655-removebg-preview_QwT7l1U.png HTTP/1.1" 200 87507
+"GET /media/processed/viz_6177109789054714655-removebg-preview_QwT7l1U.png HTTP/1.1" 200 69352
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 8475
+"GET /media/uploads/dd_RvIAj46.jpg HTTP/1.1" 200 131724
+"GET /media/processed/viz_dd_RvIAj46.jpg HTTP/1.1" 200 40765
+"GET /image/ HTTP/1.1" 200 12574
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 8471
+"GET /media/uploads/f2_JVsaFO3.png HTTP/1.1" 200 64247
+"GET /media/processed/viz_f2_JVsaFO3.png HTTP/1.1" 200 49653
+"GET /image/ HTTP/1.1" 200 12574
+"GET /video/ HTTP/1.1" 200 15176
+"POST /video/ HTTP/1.1" 302 0
+"GET /video/result/ HTTP/1.1" 200 37956
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_0.jpg HTTP/1.1" 200 3072
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_1.jpg HTTP/1.1" 200 3312
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_2.jpg HTTP/1.1" 200 3323
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_4.jpg HTTP/1.1" 200 3250
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_7.jpg HTTP/1.1" 200 3304
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_3.jpg HTTP/1.1" 200 3291
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_5.jpg HTTP/1.1" 200 3325
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_6.jpg HTTP/1.1" 200 3363
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_8.jpg HTTP/1.1" 200 3291
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_9.jpg HTTP/1.1" 200 3391
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_13.jpg HTTP/1.1" 200 2776
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_12.jpg HTTP/1.1" 200 3316
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_11.jpg HTTP/1.1" 200 3632
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_14.jpg HTTP/1.1" 200 3086
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_15.jpg HTTP/1.1" 200 3346
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_10.jpg HTTP/1.1" 200 3292
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_16.jpg HTTP/1.1" 200 3305
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_17.jpg HTTP/1.1" 200 3003
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_19.jpg HTTP/1.1" 200 3565
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_20.jpg HTTP/1.1" 200 3278
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_18.jpg HTTP/1.1" 200 3296
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_23.jpg HTTP/1.1" 200 3642
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_22.jpg HTTP/1.1" 200 3193
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_21.jpg HTTP/1.1" 200 2983
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_25.jpg HTTP/1.1" 200 3759
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_24.jpg HTTP/1.1" 200 3695
+"GET /media/frames/b35553aa-8f7b-40ea-901d-55115133f5d3_lp4n7WU/frame_26.jpg HTTP/1.1" 200 3036
+"GET /video/ HTTP/1.1" 200 15176
+"GET /admin/home/product/add/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/home/product/add/ HTTP/1.1" 200 4192
+"POST /admin/login/?next=/admin/home/product/add/ HTTP/1.1" 200 4359
+"GET / HTTP/1.1" 200 7431
+"GET / HTTP/1.1" 200 7431
+"GET / HTTP/1.1" 200 7431
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7431
+"GET /image/ HTTP/1.1" 200 12574
+D:\DD_WEBAPP\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Error loading models: name 'EfficientNet' is not defined
+Error loading models: name 'EfficientNet' is not defined
+D:\DD_WEBAPP\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Error loading models: name 'EfficientNet' is not defined
+Error loading models: name 'EfficientNet' is not defined
+D:\DD_WEBAPP\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Error loading models: name 'EfficientNet' is not defined
+Error loading models: name 'EfficientNet' is not defined
+D:\DD_WEBAPP\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Error loading models: name 'timm' is not defined
+Error loading models: name 'timm' is not defined
+D:\DD_WEBAPP\deepfake_detection\detector\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Loading pretrained weights from Hugging Face hub (timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k)
+[timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+"GET / HTTP/1.1" 200 7431
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3952
+"GET /image/ HTTP/1.1" 200 12600
+"POST /image/ HTTP/1.1" 302 0
+"GET /image/result/ HTTP/1.1" 200 8493
+"GET /media/uploads/6177109789054714655.jpg HTTP/1.1" 200 18581
+"GET /media/processed/viz_6177109789054714655.jpg HTTP/1.1" 200 12235
+"GET /image/ HTTP/1.1" 200 12600
+Watching for file changes with StatReloader
+Error loading models: [Errno 2] No such file or directory: 'D:\\DD_WEBAPP\\deepfake_detection\\models\\best_model_efficienet.pth'
+Error loading models: [Errno 2] No such file or directory: 'D:\\DD_WEBAPP\\deepfake_detection\\models\\best_model_efficienet.pth'

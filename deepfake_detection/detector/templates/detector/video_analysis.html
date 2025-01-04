@@ -1,0 +1,196 @@
+{% extends 'detector/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-4">Video Analysis</h2>
+                
+                <form method="post" enctype="multipart/form-data" id="uploadForm">
+                    {% csrf_token %}
+                    
+                    <div class="upload-area mb-4" id="dropZone">
+                        <i class="fas fa-film fa-3x mb-3 text-primary"></i>
+                        <h4>Drag and drop your video here</h4>
+                        <p class="text-muted">or</p>
+                        {{ form.file|as_crispy_field }}
+                    </div>
+                    
+                    <div class="text-muted mb-4">
+                        <small>
+                            <i class="fas fa-info-circle"></i>
+                            Supported formats: MP4, AVI, MOV | Max size: 100MB
+                        </small>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="form-label">Number of frames to analyze: <span id="frameCount">100</span></label>
+                        <input type="range" class="form-range" id="frameSlider" name="num_frames" 
+                               min="10" max="300" value="100" 
+                               oninput="updateFrameCount(this.value)">
+                        <div class="d-flex justify-content-between">
+                            <small class="text-muted">10</small>
+                            <small class="text-muted">300</small>
+                        </div>
+                        <small class="text-muted d-block mt-1">
+                            More frames = more accurate but slower processing
+                        </small>
+                    </div>
+                    
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">
+                            <i class="fas fa-search me-2"></i>Analyze Video
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="processing-overlay d-none" id="processingOverlay">
+    <div class="text-center">
+        <div class="spinner-border text-primary mb-3" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <h4 class="text-white">Processing your video...</h4>
+        <div class="progress mb-3" style="width: 300px;">
+            <div class="progress-bar" id="progressBar" role="progressbar"></div>
+        </div>
+        <p class="text-white" id="processingStatus">Extracting frames...</p>
+    </div>
+</div>
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.querySelector('input[type="file"]');
+        const form = document.getElementById('uploadForm');
+        const overlay = document.getElementById('processingOverlay');
+        const statusText = document.getElementById('processingStatus');
+        const progressBar = document.getElementById('progressBar');
+        
+        // Drag and drop functionality
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('border-primary');
+        });
+        
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('border-primary');
+        });
+        
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('border-primary');
+            
+            const files = e.dataTransfer.files;
+            if (files.length) {
+                fileInput.files = files;
+                updateFileName();
+            }
+        });
+        
+        // File input change handler
+        fileInput.addEventListener('change', updateFileName);
+        
+        // Form submit handler
+        form.addEventListener('submit', (e) => {
+            overlay.classList.remove('d-none');
+            
+            // Simulate processing steps
+            const steps = [
+                { text: 'Extracting frames...', progress: 25 },
+                { text: 'Detecting faces...', progress: 50 },
+                { text: 'Analyzing frames...', progress: 75 },
+                { text: 'Generating results...', progress: 90 }
+            ];
+            
+            let currentStep = 0;
+            const interval = setInterval(() => {
+                if (currentStep < steps.length) {
+                    statusText.textContent = steps[currentStep].text;
+                    progressBar.style.width = `${steps[currentStep].progress}%`;
+                    currentStep++;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 2000);
+        });
+        
+        function updateFileName() {
+            const fileName = fileInput.files[0]?.name;
+            if (fileName) {
+                dropZone.querySelector('h4').textContent = fileName;
+            }
+        }
+    });
+
+    function updateFrameCount(value) {
+        document.getElementById('frameCount').textContent = value;
+    }
+</script>
+
+<style>
+    .processing-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+    
+    .upload-area {
+        border: 2px dashed #dee2e6;
+        border-radius: 10px;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        transition: border-color 0.3s ease;
+    }
+    
+    .upload-area.border-primary {
+        border-color: var(--bs-primary);
+    }
+    
+    .upload-area input[type="file"] {
+        display: none;
+    }
+    
+    .upload-area label {
+        cursor: pointer;
+        padding: 10px 20px;
+        background-color: var(--bs-primary);
+        color: white;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .upload-area label:hover {
+        background-color: #0056b3;
+    }
+    
+    .progress {
+        height: 8px;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .progress-bar {
+        background-color: var(--bs-primary);
+        transition: width 0.5s ease;
+    }
+</style>
+{% endblock %}
+{% endblock %}
